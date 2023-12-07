@@ -1,0 +1,21 @@
+.wrapper {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-left: 20px ;
+}
+
+.container {
+    margin-top: 12px;
+}
+
+.table-log {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}

@@ -1,0 +1,71 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid var(--border-color);
+    width: 1280px;
+    margin: 60px auto;
+    padding: 12px 20px;
+}
+
+.title{
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+} 
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-file{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.upload-btn{
+    margin-right: 20px;
+    background-color: var(--primary-color);
+}
+
+.upload-note{
+    font-size: 20px;
+}
+
+.select {
+    margin: 10px;
+}
+
+.seclect-title {
+    font-size: 20px;
+    width: 140px;
+    display: inline-block;
+}
+
+.selection {
+    margin-right: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.radio-check {
+    width: 120px;
+}
+
+.selec-pages {
+    display: flex;
+    box-flex-group: row;
+}
+
+.select-input {
+    width: 160px;
+    background-color: var(--input-color);
+    border: 1px solid var(--border-color);
+}
+
+.accept {
+    width: 120px;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+}

@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import BuyPages from './component/BuyPages';
+import ConfigSystem from './component/ConfigSystem';
+import HomeAdmin from './component/HomeAdmin/HomeAdmin';
+import HomeUser from './component/HomeUser/HomeUser';
+import LogAdmin from './component/LogAdmin/LogAdmin';
+import LogBuyPages from './component/LogBuyPages';
+import LogUser from './component/LogUser';
+import Print from './component/Print';
+import Printer from './component/Printer/Printer';
+import AdminLayout from './layouts/AdminLayout/AdminLayout';
+import Login from './layouts/Login';
+import UserLayout from './layouts/UserLayout/UserLayout';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+    const [islogin, setIsLogin] = useState(true)
+    const [isUser, setIsUser] = useState(true)
+    return (
+    <Router>
+        <Routes>
+            {!islogin ? 
+                <Route path={'/'} element={<Login />} /> :
+                (isUser ? 
+                    <Route path={'/'} element={<UserLayout />}>
+                    <Route path={''} element={<HomeUser  />} />
+                    <Route path={'print'} element={<Print />} />
+                    <Route path={'log'} element={<LogUser />} />
+                    <Route path={'buy-pages'} element={<BuyPages />} />
+                    <Route path={'log-buy-pages'} element={<LogBuyPages />} />
+                </Route> 
+                : 
+                <Route path={'/'} element={<AdminLayout />}>
+                    <Route path={''} element={<HomeAdmin />} />
+                    <Route path={'config-system'} element={<ConfigSystem />} />
+                    <Route path={'printer'} element={<Printer />} />
+                    <Route path={'log'} element={<LogAdmin />} />
+                </Route>
+                    )
+            }
+            
+           
+        </Routes>
+    </Router>
+    );
+};
 export default App;

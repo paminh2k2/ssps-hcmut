@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    height: 360px;
+    margin: 60px auto;
+}   
+
+.header {
+    color: var(--primary-color);
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.body {
+    display: flex;
+    min-height: 373px;
+    padding: 20px 40px;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    margin-top: 20px;
+}
+
+.header-second {
+    font-size: 16px;
+}
+
+.title {
+    margin: 16px 0 8px;
+}
+
+.count-input {
+    background-color: var(--input-color);
+}
+
+.note {
+    margin: 8px 0 4px;
+}
+
+.note-list {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.order-btn {
+    width: 120px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    height: 120px;
+    padding: 10px;
+    background-color: #e5e5e5;
+}
+.card-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-btn{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.box-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius:50%;
+    margin-right: 20px;
+    background-color: #e6e6e6;
+}
+
+.icon {
+    font-size: 24px;
+    
+}

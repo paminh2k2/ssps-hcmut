@@ -20,13 +20,13 @@ function HomeUser({fullname, countpages, countprints, filename, dateprint}) {
             </div>
         </div>
         <div className={cx('function')}>
-            <Link to = {'/print'}>
+            <Link to = {'print'}>
                 <Button className={cx('function-btn')}>IN ẤN</Button>
             </Link>
-            <Link to={'/buy-pages'}>
+            <Link to={'buy-pages'}>
                 <Button className={cx('function-btn')}>MUA TRANG</Button>
             </Link>
-            <Link to={'/log'}>
+            <Link to={'log'}>
                 <Button className={cx('function-btn')}>LỊCH SỬ IN</Button>
             </Link>
             <Link >

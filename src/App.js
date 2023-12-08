@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+    import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import BuyPages from './component/BuyPages';
 import ConfigSystem from './component/ConfigSystem';
@@ -13,35 +13,33 @@ import AdminLayout from './layouts/AdminLayout/AdminLayout';
 import Login from './layouts/Login';
 import UserLayout from './layouts/UserLayout/UserLayout';
 
-function App() {
-    const [islogin, setIsLogin] = useState(true)
-    const [isUser, setIsUser] = useState(true)
-    return (
-    <Router>
-        <Routes>
-            {!islogin ? 
-                <Route path={'/'} element={<Login />} /> :
-                (isUser ? 
-                    <Route path={'/'} element={<UserLayout />}>
-                    <Route path={''} element={<HomeUser  />} />
-                    <Route path={'print'} element={<Print />} />
-                    <Route path={'log'} element={<LogUser />} />
-                    <Route path={'buy-pages'} element={<BuyPages />} />
-                    <Route path={'log-buy-pages'} element={<LogBuyPages />} />
-                </Route> 
-                : 
-                <Route path={'/'} element={<AdminLayout />}>
-                    <Route path={''} element={<HomeAdmin />} />
-                    <Route path={'config-system'} element={<ConfigSystem />} />
-                    <Route path={'printer'} element={<Printer />} />
-                    <Route path={'log'} element={<LogAdmin />} />
-                </Route>
-                    )
-            }
-            
-           
-        </Routes>
-    </Router>
-    );
-};
-export default App;
+    function App() {
+        
+        return (
+            <Router>
+            <Routes>
+              <Route path={'/'} element={<Login />} />
+              <Route
+                path={`/user/:username`}
+                element={
+                  <UserLayout/>
+                }
+              >
+                <Route path='' element={<HomeUser />} />
+                <Route path={'print'} element={<Print/>} />
+                <Route path={'log'} element={<LogUser />} />
+                <Route path={'buy-pages'} element={<BuyPages />} />
+                <Route path={'log-buy-pages'} element={<LogBuyPages />} />
+
+              </Route>
+              <Route path={'/admin'} element={<AdminLayout />}>
+                <Route path={''} element={<HomeAdmin />} />
+                <Route path={'config-system'} element={<ConfigSystem />} />
+                <Route path={'printer'} element={<Printer />} />
+                <Route path={'log'} element={<LogAdmin />} />
+              </Route>
+            </Routes>
+          </Router>
+        );
+    };
+    export default App;

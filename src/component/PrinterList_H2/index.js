@@ -1,0 +1,1 @@
+export { default } from './PrinterList_H2';

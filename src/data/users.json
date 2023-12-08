@@ -1,0 +1,17 @@
+[
+    {
+        "username": 12345678,
+        "name": "Pham Anh Minh",
+        "password": "12345678",
+        "role": "user",
+        "countpages": 100,
+        "countprints": 3,
+        "filename": "abc.pdf",
+        "dateprint": "12/08/2023"
+    },
+    {
+        "username": 87654321,
+        "password": "87654321",
+        "role": "admin"
+    }
+]

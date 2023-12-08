@@ -7,18 +7,25 @@ import HomeUser from '../../component/HomeUser';
 import LogBuyPages from '../../component/LogBuyPages';
 import LogUser from '../../component/LogUser';
 import Print from '../../component/Print';
+import users from '../../data/users.json';
 
 import { useParams } from 'react-router-dom';
 
 function UserLayout() {
   const { username } = useParams(); 
-  console.log(username);
+
+  const user = users.find((u) => u.username === parseInt(username));
 
   return (
     <div>
       <HeaderUser />
       <Routes>
-        <Route path='' element={<HomeUser fullname="ĐỨC THỊNH" />} />
+        <Route path='' element={<HomeUser fullname={user.name} 
+        countpages = {user.countpages}
+        countprints = {user.countprints}
+        filename = {user.filename}
+        dateprint = {user.dateprint}
+        />} />
         <Route path={'print'} element={<Print />} />
         <Route path={'log'} element={<LogUser />} />
         <Route path={'buy-pages'} element={<BuyPages countpages={100} />} />

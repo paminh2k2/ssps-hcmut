@@ -3,28 +3,18 @@ import classNames from "classnames/bind";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FooterUser from '../../component/FooterUser';
+import usersDate from '../../data/users.json';
 import styles from './Login.module.scss';
+
 
 const cx = classNames.bind(styles)
 
-const users = [
-    {
-        username: 2013782,
-        password: 'abcdefgh',
-        role: 'student'
-    },
-    {
-        username: 8888888,
-        password: 'abcdefgh',
-        role: 'admin'
-    }
-]
+const users = usersDate
 
-function Login({userid}) {
+function Login() {
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
-
-
+    
     const handleInputUsername = (e) => {
         setUsername(e.target.value)
     }
@@ -40,7 +30,7 @@ function Login({userid}) {
             if (user.role === 'admin') {
                 // Chuyển hướng đến trang admin
                 navigate('/admin');
-            } else if (user.role === 'student') {
+            } else if (user.role === 'user') {
                 // Chuyển hướng đến trang người dùng và truyền thông tin người dùng qua URL
                 navigate(`/user/${user.username}`);
             }

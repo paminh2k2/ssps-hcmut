@@ -2,11 +2,12 @@ import { CheckOutlined } from '@ant-design/icons';
 import { Button, Card, Input, Select } from "antd";
 import classNames from "classnames/bind";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styels from './BuyPages.module.scss';
 
 const cx = classNames.bind(styels);
 
-function BuyPages({countpages}) {
+function BuyPages({countpages, user}) {
     const [count, setCount] = useState(0)
     const [pricepage, setPricePage] = useState(500)
     const [isaccept,setIsAccept] = useState(false)
@@ -47,7 +48,12 @@ function BuyPages({countpages}) {
                 <li>A3: 1000đ/tờ</li>
             </ul>
             <span>{`Tổng tiền: ${count*pricepage}đ`}</span>
-            <Button type="primary" className={cx('order-btn')} onClick={handleOnclick} >Tạo đơn</Button>
+            <div>
+                <Button type="primary" className={cx('order-btn')} onClick={handleOnclick} >Tạo đơn</Button>
+                <Link to={`/user/${user}`}>
+                    <Button  className={cx('back')}>Quay lại</Button>
+                </Link>
+            </div>
             </>
             : 
             <Card 

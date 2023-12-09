@@ -108,7 +108,6 @@ function LogAdmin() {
             type="primary"
             icon={<LeftOutlined />}
           >
-            Quay lại
           </Button>
         </Link>
   

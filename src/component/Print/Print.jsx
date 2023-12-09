@@ -2,6 +2,7 @@ import { UploadOutlined } from '@ant-design/icons';
 import { Button, Input, Radio, Select, Upload, message } from 'antd';
 import classNames from "classnames/bind";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Print.module.scss';
 
 const props = {
@@ -26,7 +27,7 @@ const props = {
 const cx = classNames.bind(styles)
 
 
-function Print() {
+function Print({user}) {
     const [countpage, setCountPage] = useState(1);
     const [kindpage, setKindPage] = useState(1);
     const [ side, setSide] = useState(1);
@@ -127,7 +128,12 @@ function Print() {
                         bordered
                     />
             </div>
+            <div>
             <Button type="primary" className={cx('accept')}>Xác nhận in</Button>
+            <Link to={`/user/${user}`}>
+              <Button  className={cx('back')}>Quay lại</Button>
+            </Link>
+            </div>
         </div>
     </div>
     );

@@ -26,10 +26,10 @@ function UserLayout() {
         filename = {user.filename}
         dateprint = {user.dateprint}
         />} />
-        <Route path={'print'} element={<Print />} />
-        <Route path={'log'} element={<LogUser />} />
-        <Route path={'buy-pages'} element={<BuyPages countpages={100} />} />
-        <Route path={'log-buy-pages'} element={<LogBuyPages />} />
+        <Route path={'print'} element={<Print user={username}/>} />
+        <Route path={'log'} element={<LogUser user={username}/>} />
+        <Route path={'buy-pages'} element={<BuyPages countpages={100} user={username}/>} />
+        <Route path={'log-buy-pages'} element={<LogBuyPages user={username}/>} />
       </Routes>
       <FooterUser />
     </div>

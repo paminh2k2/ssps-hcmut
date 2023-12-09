@@ -1,11 +1,12 @@
 import { Button } from "antd";
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
+import admin from '../../data/admin.json';
 import styles from './HomeAdmin.module.scss';
 
 const cx = classNames.bind(styles)
 
-function HomeAdmin({printing, countprinters, countpages}) {
+function HomeAdmin() {
     return ( 
     <div className={cx('wrapper')}>
         
@@ -13,11 +14,11 @@ function HomeAdmin({printing, countprinters, countpages}) {
 
         <div className={cx('container')}>
             <div className={cx('container-left')}> 
-                <span className={cx('container-content')}>{`Total Printing Activities: ${printing}`}</span>
-                <span className={cx('container-content')}>{`Active Printer: ${countprinters}`}</span>
+                <span className={cx('container-content')}>{`Total Printing Activities: ${admin[0].printing}`}</span>
+                <span className={cx('container-content')}>{`Active Printer: ${admin[0].countprinters}`}</span>
             </div>
             <div className={cx('container-right')}>
-            <span className={cx('container-content')}>{`Today Pages Printed: ${countpages}`}</span> 
+            <span className={cx('container-content')}>{`Today Pages Printed: ${admin[0].countpages}`}</span> 
             </div>
         </div>
         <div className={cx('function')}>

@@ -5,23 +5,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Print.module.scss';
 
-const props = {
-  name: 'file',
-  action: 'https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188',
-  headers: {
-    authorization: 'authorization-text',
-  },
-  onChange(info) {
-    if (info.file.status !== 'uploading') {
-      console.log(info.file, info.fileList);
-    }
-    if (info.file.status === 'done') {
-      message.success(`${info.file.name} file uploaded successfully`);
-    } else if (info.file.status === 'error') {
-      message.error(`${info.file.name} file upload failed.`);
-    }
-  },
-};
+
 
 
 const cx = classNames.bind(styles)
@@ -33,7 +17,14 @@ function Print({user}) {
     const [ side, setSide] = useState(1);
     const [floor, setFloor] = useState(1)
     const [build,setBuild] = useState('H1')
+    const [pagesprint, setPagesPrint] = useState('');
+    const [recordnumber,setRecordNumber] = useState(1)
+    const [totalpages,setTotalPages] = useState(0);
+    const [fileList,setFileList] = useState([]);
 
+  const onChangeRecordNumber = (e) => { 
+    setRecordNumber(e.target.value)
+  }
   const onChangeCountPage = (e) => {
     setCountPage(e.target.value);
   };
@@ -49,13 +40,51 @@ function Print({user}) {
   const handleChangeFloor = (value) => {
     setFloor(value);
   }
+  const onChangePagesPrint = (e) => {
+    const inputString = e.target.value;
+    setPagesPrint(inputString);
+    const ranges = inputString.split(',').map(range => range.trim());
+    let totalPages = 0;
 
+    ranges.forEach(range => {
+    if (range.includes('-')) {
+      // Nếu là dạng "a-b"
+      const [start, end] = range.split('-').map(Number);
+      totalPages += end - start + 1;
+    } else {
+      // Nếu là số đơn
+      totalPages += 1;
+    }
+    });
+
+    setTotalPages(totalPages);
+  }
+
+  
+
+  const props = {
+    name: 'file',
+    action: 'https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188',
+    headers: {
+      authorization: 'authorization-text',
+    },
+    onChange(info) {
+      
+      if (info.file.status === 'done') {
+        message.success(`${info.file.name} file uploaded successfully`);
+        setFileList(info.fileList)
+      } else if (info.file.status === 'error') {
+        message.error(`${info.file.name} file upload failed.`);
+      }
+    },
+  };
     return (
     <div className={cx('wrapper')}>
         <h2 className={cx('title')}>IN TÀI LIỆU</h2>
         <div className={cx('container')}>
             <div className={cx('upload-file')}>
-            <Upload {...props}>
+            <Upload {...props} maxCount={1}
+            >
                 <Button className={cx('upload-btn')} type="primary" icon={<UploadOutlined />} >Upload file</Button>
                 <span className={cx('upload-note')}>{"(.doc, .pdf)"}</span>
                 </Upload>
@@ -102,9 +131,12 @@ function Print({user}) {
                     </Radio>
                     <Input
                         className={cx('select-input')}
-                        placeholder="Ví dụ: 1-5, 6, 8-12..." 
-                    />
+                        placeholder="Ví dụ: 1-5, 6, 8-12..."
+                        value = {pagesprint}
+                        onChange={onChangePagesPrint}
+                        />
                     </Radio.Group>
+                    {console.log(totalpages)}
             </div>
             <div className={cx('select')}>
                 <span className={cx('seclect-title')}>Loại giấy:</span>
@@ -120,12 +152,14 @@ function Print({user}) {
                     <Radio value={2} className={cx('radio-check')}>1</Radio>
                 </Radio.Group>
             </div>
-            <div className={cx('selec-printer')}>
+            <div className={cx('select-printer')}>
                 <span className={cx('seclect-title')}>Số bản:</span>
                 <Input
                         className={cx('select-input')}
                         placeholder="Ví dụ: 3"
                         bordered
+                        value={recordnumber}
+                        onChange={onChangeRecordNumber}
                     />
             </div>
             <div>

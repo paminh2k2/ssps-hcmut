@@ -85,9 +85,9 @@ function Print({user}) {
             <div className={cx('upload-file')}>
             <Upload {...props} maxCount={1}
             >
-                <Button className={cx('upload-btn')} type="primary" icon={<UploadOutlined />} >Upload file</Button>
-                <span className={cx('upload-note')}>{"(.doc, .pdf)"}</span>
-                </Upload>
+              <Button className={cx('upload-btn')} type="primary" icon={<UploadOutlined />} >Upload file</Button>
+              <span className={cx('upload-note')}>{"(.doc, .pdf)"}</span>
+            </Upload>
             </div>
             <div className={cx('select')}>
                 <span className={cx('seclect-title')}>Chọn máy in:</span>
@@ -134,9 +134,9 @@ function Print({user}) {
                         placeholder="Ví dụ: 1-5, 6, 8-12..."
                         value = {pagesprint}
                         onChange={onChangePagesPrint}
-                        />
-                    </Radio.Group>
-                    {console.log(totalpages)}
+                    />
+                </Radio.Group>
+                {console.log(fileList[0])}
             </div>
             <div className={cx('select')}>
                 <span className={cx('seclect-title')}>Loại giấy:</span>

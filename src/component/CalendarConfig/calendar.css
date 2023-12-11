@@ -1,0 +1,16 @@
+.datebox{
+    background-color: aliceblue;
+    font-size: 16px;
+    font-style: oblique;
+    height: 32px;
+    width: 80%;
+    /* padding: auto; */
+    margin: 5px auto 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    text-align: center;
+}

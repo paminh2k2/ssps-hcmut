@@ -14,11 +14,11 @@ function HomeAdmin() {
 
         <div className={cx('container')}>
             <div className={cx('container-left')}> 
-                <span className={cx('container-content')}>{`Total Printing Activities: ${admin[0].printing}`}</span>
-                <span className={cx('container-content')}>{`Active Printer: ${admin[0].countprinters}`}</span>
+                <span className={cx('container-content')}>{`Tổng số lần in ấn: ${admin[0].printing}`}</span>
+                <span className={cx('container-content')}>{`Số máy in đang hoạt động: ${admin[0].countprinters}`}</span>
             </div>
             <div className={cx('container-right')}>
-            <span className={cx('container-content')}>{`Today Pages Printed: ${admin[0].countpages}`}</span> 
+            <span className={cx('container-content')}>{`Số trang đã được in trong hôm nay: ${admin[0].countpages}`}</span> 
             </div>
         </div>
         <div className={cx('function')}>

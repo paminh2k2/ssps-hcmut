@@ -21,7 +21,7 @@ function Printer() {
         </Button>
       </Link>
 
-      <h1 className={cx("title")}>{`MANAGE PRINTER`}</h1>
+      <h1 className={cx("title")}>{`QUẢN LÍ MÁY IN`}</h1>
 
       <div className={cx("function")}>
         <Link to={"/admin/printerlist_H1"}>

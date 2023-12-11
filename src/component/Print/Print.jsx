@@ -5,9 +5,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Print.module.scss';
 
-
-
-
 const cx = classNames.bind(styles)
 
 
@@ -136,7 +133,7 @@ function Print({user}) {
                         onChange={onChangePagesPrint}
                     />
                 </Radio.Group>
-                {console.log(fileList[0])}
+                { fileList[0] && console.log(fileList[0].name)}
             </div>
             <div className={cx('select')}>
                 <span className={cx('seclect-title')}>Loại giấy:</span>

@@ -1,0 +1,322 @@
+[{
+  "_id": {
+    "$oid": "65758ddae3dde14baf657cec"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "example.pdf",
+  "build_name": "H3",
+  "room_number": "4",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T10:07:22.350Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T10:07:22.350Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65758ddce3dde14baf657cf0"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "example.pdf",
+  "build_name": "H3",
+  "room_number": "4",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T10:07:24.868Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T10:07:24.868Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65758ddde3dde14baf657cf4"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "example.pdf",
+  "build_name": "H3",
+  "room_number": "4",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T10:07:25.136Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T10:07:25.136Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65758ddde3dde14baf657cf8"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "example.pdf",
+  "build_name": "H3",
+  "room_number": "4",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T10:07:25.400Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T10:07:25.400Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65759d8d085b8cd0a3bb9471"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "example.pdf",
+  "build_name": "H6",
+  "room_number": "4",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T11:14:21.765Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T11:14:21.765Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65759db0085b8cd0a3bb9478"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "example.pdf",
+  "build_name": "H2",
+  "room_number": "2",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "1",
+  "createdAt": {
+    "$date": "2023-12-10T11:14:56.590Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T11:14:56.590Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65759df7fdd4ea24a551ed5b"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H2",
+  "room_number": "2",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "1",
+  "createdAt": {
+    "$date": "2023-12-10T11:16:07.821Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T11:16:07.821Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e4e437dd539062c66483"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H1",
+  "room_number": "1",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T16:18:44.473Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:18:44.473Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e4e637dd539062c66487"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H1",
+  "room_number": "1",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T16:18:46.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:18:46.434Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e4e737dd539062c6648b"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H1",
+  "room_number": "1",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T16:18:47.185Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:18:47.185Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e4e837dd539062c6648f"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H1",
+  "room_number": "2",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T16:18:48.878Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:18:48.878Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e4eb37dd539062c66493"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H1",
+  "room_number": "3",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T16:18:51.031Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:18:51.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e4ed37dd539062c66497"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H1",
+  "room_number": "4",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T16:18:53.555Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:18:53.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575f2bbe227774e9236c054"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "filename": "Report (4).pdf",
+  "build_name": "H6",
+  "room_number": "1",
+  "pages_to_print": "1",
+  "total_pages_print": "10",
+  "type_page": "A4",
+  "paper_sides": "1",
+  "record_number": "10",
+  "createdAt": {
+    "$date": "2023-12-10T17:17:47.831Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T17:17:47.831Z"
+  },
+  "__v": 0
+}]

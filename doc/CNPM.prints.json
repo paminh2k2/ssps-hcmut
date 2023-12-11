@@ -1,0 +1,192 @@
+[{
+  "_id": {
+    "$oid": "6575e0c96978bccf749b4c45"
+  },
+  "build_name": "H1",
+  "room_number": "1",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:13.361Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:13.361Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0d96978bccf749b4c48"
+  },
+  "build_name": "H2",
+  "room_number": "1",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:29.429Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:29.429Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0db6978bccf749b4c4b"
+  },
+  "build_name": "H3",
+  "room_number": "1",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:31.640Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:31.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0de6978bccf749b4c4e"
+  },
+  "build_name": "H6",
+  "room_number": "1",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:34.729Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:34.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0e16978bccf749b4c51"
+  },
+  "build_name": "H6",
+  "room_number": "2",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:37.826Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:37.826Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0e46978bccf749b4c54"
+  },
+  "build_name": "H6",
+  "room_number": "3",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:40.672Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:40.672Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0e76978bccf749b4c57"
+  },
+  "build_name": "H6",
+  "room_number": "4",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:43.486Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:43.486Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0ea6978bccf749b4c5a"
+  },
+  "build_name": "H1",
+  "room_number": "4",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:46.355Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:46.355Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0ed6978bccf749b4c5d"
+  },
+  "build_name": "H1",
+  "room_number": "2",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:49.011Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:49.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575e0ef6978bccf749b4c60"
+  },
+  "build_name": "H1",
+  "room_number": "3",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:01:51.265Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:01:51.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575edaee227774e9236bfde"
+  },
+  "build_name": "H1",
+  "room_number": "5",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T16:56:14.295Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T16:56:14.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6575f99f000c2230aa9517a1"
+  },
+  "build_name": "H2",
+  "room_number": "2",
+  "page_balance": "10000",
+  "status": "true",
+  "createdAt": {
+    "$date": "2023-12-10T17:47:11.365Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T17:47:11.365Z"
+  },
+  "__v": 0
+}]

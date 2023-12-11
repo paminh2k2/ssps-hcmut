@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "6573dcb13d9cb0c1f67f19ad"
+  },
+  "username": "thientran",
+  "number_page": "20",
+  "type_page": "A4",
+  "price": "10000",
+  "status": "Thành công",
+  "createdAt": {
+    "$date": "2023-12-09T03:19:13.556Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-09T03:19:13.556Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6573dd51f44ad99aff7962cc"
+  },
+  "username": "thientran",
+  "number_page": "10",
+  "type_page": "A4",
+  "price": "5000",
+  "status": "Thành công",
+  "createdAt": {
+    "$date": "2023-12-09T03:21:53.316Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-09T03:21:53.316Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6573dd52f44ad99aff7962d3"
+  },
+  "username": "thientran",
+  "number_page": "10",
+  "type_page": "A4",
+  "price": "5000",
+  "status": "Thành công",
+  "createdAt": {
+    "$date": "2023-12-09T03:21:54.422Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-09T03:21:54.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6573dd60f44ad99aff7962da"
+  },
+  "username": "thientran",
+  "number_page": "10",
+  "type_page": "A4",
+  "price": "5000",
+  "status": "Thành công",
+  "createdAt": {
+    "$date": "2023-12-09T03:22:08.447Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-09T03:22:08.447Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6573dd64f44ad99aff7962e1"
+  },
+  "username": "thientran",
+  "number_page": "10",
+  "type_page": "A4",
+  "price": "5000",
+  "status": "Thành công",
+  "createdAt": {
+    "$date": "2023-12-09T03:22:12.142Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-09T03:22:12.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65759e81fdd4ea24a551ed6d"
+  },
+  "username": "thientran",
+  "number_page": "100",
+  "type_page": "A4",
+  "price": "50000",
+  "status": "Thành công",
+  "createdAt": {
+    "$date": "2023-12-10T11:18:25.817Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T11:18:25.817Z"
+  },
+  "__v": 0
+}]

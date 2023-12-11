@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6570ad9c5892e11a9825b4bb"
+  },
+  "username": "thientran",
+  "email": "user@hcmut.edu.vn",
+  "mssv": "2014583",
+  "password": "$2b$10$hKG4hspPSW0j7jJkrjq5muVUZgDC3EWWWV21T7SR.3gML8U7o/Hl6",
+  "A3_page_balance": "2011",
+  "A4_page_balance": "94",
+  "A3_page_used": "30",
+  "A4_page_used": "210",
+  "isAdmin": false,
+  "createdAt": {
+    "$date": "2023-12-06T17:21:32.989Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T17:17:47.828Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65759f2bfdd4ea24a551ed75"
+  },
+  "username": "admin",
+  "email": "admin@hcmut.edu.vn",
+  "mssv": "000000",
+  "password": "$2b$10$6i1GR.f5A3apNtDL6ZCzheQeL.MLpkY9/iO9a7Yix7cHLS7gXRdu6",
+  "A3_page_balance": "20",
+  "A4_page_balance": "20",
+  "A3_page_used": "0",
+  "A4_page_used": "0",
+  "isAdmin": true,
+  "createdAt": {
+    "$date": "2023-12-10T11:21:15.555Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-10T11:21:15.555Z"
+  },
+  "__v": 0
+}]
